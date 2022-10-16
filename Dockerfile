@@ -9,4 +9,4 @@ RUN wget https://dl.minio.io/server/minio/release/linux-amd64/minio -O /usr/loca
 
 USER root:root
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+CMD ["/bin/bash"]
